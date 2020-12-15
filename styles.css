@@ -1,0 +1,21 @@
+#app-body {
+    display: flex;
+    justify-content: center;
+}
+
+#app-body section {
+    width: auto;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    border: 10px rgb(109, 109, 109) solid;
+    border-radius: 4pt;
+    box-shadow: -5px 5px 5pt rgb(167, 167, 167);
+    padding: 10px;
+}
+
+#app-body img {
+    max-width: 40vw;
+}

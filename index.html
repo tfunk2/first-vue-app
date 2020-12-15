@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Vue App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body id="app-body">
+    <section>
+        <img v-bind:src="avatarImage"></img>
+        <h2>{{ name }}</h2>
+        <h2>Age: {{ age }}</h2>
+        <h2>Hometown: {{ hometown }}</h2>
+        <h2>Random Hobby: {{ getRandomHobby() }}</h2>
+    </section>
+</body>
+</html>
