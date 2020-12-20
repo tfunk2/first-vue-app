@@ -4,7 +4,7 @@
 }
 
 #app-body section {
-    width: auto;
+    width: 40vw;
     justify-self: center;
     display: flex;
     flex-direction: column;
@@ -18,4 +18,12 @@
 
 #app-body img {
     max-width: 40vw;
+}
+
+#app-body button {
+    width: fit-content;
+}
+
+#app-body h2 {
+    word-wrap: break-word;
 }

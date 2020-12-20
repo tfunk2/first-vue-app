@@ -14,7 +14,8 @@
         <h2>{{ name }}</h2>
         <h2>Age: {{ age }}</h2>
         <h2>Hometown: {{ hometown }}</h2>
-        <h2>Random Hobby: {{ getRandomHobby() }}</h2>
+        <h2>Random Hobby: {{ displayedHobby }}</h2>
+        <button v-on:click="setDisplayedHobby">Randomize Hobby</button>
     </section>
 </body>
 </html>
