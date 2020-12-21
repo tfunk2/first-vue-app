@@ -7,7 +7,24 @@ const app = Vue.createApp({
       hobbies: ["Golf", "Coding", "Video Games"],
       displayedHobby: `Click the button to see this person's hobbies!`,
       avatarImage: "https://www.w3schools.com/howto/img_avatar.png",
-    };
+      colorOne: false,
+      colorTwo: false,
+      colorThree: false,
+      colorFour: false,
+      colorFive: false,
+      activeColor: "#FFFFFF"
+    }
+  },
+  computed: {
+    activeBackgroundColor() {
+      return { 
+        colorOne: this.colorOne, 
+        colorTwo: this.colorTwo, 
+        colorThree: this.colorThree, 
+        colorFour: this.colorFour, 
+        colorFive: this.colorFive, 
+      }
+    }
   },
   methods: {
     setDisplayedHobby() {
@@ -17,13 +34,48 @@ const app = Vue.createApp({
         if(randomIndex === 0) {
           randomIndex = 1;
         } else {
-          randomIndex -= 1
+          randomIndex -= 1;
         }
       }
       
       this.displayedHobby = this.hobbies[randomIndex];
     },
-  },
+    changeBackgroundColor() {
+      const colorPalette = ['#72195A', '#386FA4', '#D0D6B5', '#F9B5AC', '#EE7674']
+      let randomIndex = Math.floor(Math.random() * colorPalette.length);
+
+      if(colorPalette[randomIndex] === this.activeColor) {
+        if(randomIndex === 0) {
+          randomIndex = 1;
+        } else {
+          randomIndex -= 1;
+        }
+      }
+
+      this.colorOne = false;
+      this.colorTwo = false;
+      this.colorThree = false;
+      this.colorFour = false;
+      this.colorFive = false;
+
+      if(colorPalette[randomIndex] === '#72195A') {
+        this.colorOne = true;
+        this.activeColor = '#72195A';
+      } else if(colorPalette[randomIndex] === '#386FA4') {
+        this.colorTwo = true;
+        this.activeColor = '#386FA4';
+      } else if(colorPalette[randomIndex] === '#D0D6B5') {
+        this.colorThree = true;
+        this.activeColor = '#D0D6B5';
+      } else if(colorPalette[randomIndex] === '#F9B5AC') {
+        this.colorFour = true;
+        this.activeColor = '#F9B5AC';
+      } else if(colorPalette[randomIndex] === '#EE7674') {
+        this.colorFive = true;
+        this.activeColor = '#EE7674';
+      }
+    }
+  }
 });
 
 app.mount("#app-body");

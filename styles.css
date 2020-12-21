@@ -17,7 +17,10 @@
 }
 
 #app-body img {
-    max-width: 40vw;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #app-body button {
@@ -26,4 +29,28 @@
 
 #app-body h2 {
     word-wrap: break-word;
+}
+
+.colorOne {
+    color: white;
+    background-color: #72195A;
+}
+
+.colorTwo {
+    background-color: #386FA4;
+}
+
+.colorThree {
+    background-color: #D0D6B5;
+    
+}
+
+.colorFour {
+    background-color: #F9B5AC;
+    
+}
+
+.colorFive {
+    background-color: #EE7674;
+    
 }

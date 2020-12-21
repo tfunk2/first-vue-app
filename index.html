@@ -9,13 +9,14 @@
     <script src="app.js" defer></script>
 </head>
 <body id="app-body">
-    <section>
+    <section :class="activeBackgroundColor">
         <img v-bind:src="avatarImage"></img>
         <h2>{{ name }}</h2>
         <h2>Age: {{ age }}</h2>
         <h2>Hometown: {{ hometown }}</h2>
         <h2>Random Hobby: {{ displayedHobby }}</h2>
         <button v-on:click="setDisplayedHobby">Randomize Hobby</button>
+        <button v-on:click="changeBackgroundColor">Randomize Background Color</button>
     </section>
 </body>
 </html>
