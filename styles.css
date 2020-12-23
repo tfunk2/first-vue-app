@@ -1,75 +1,75 @@
 #app-body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #app-body section {
-    width: 40vw;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    border: 10px rgb(109, 109, 109) solid;
-    border-radius: 4pt;
-    box-shadow: -5px 5px 5pt rgb(167, 167, 167);
-    padding: 10px;
+  width: 40vw;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  border: 10px rgb(109, 109, 109) solid;
+  border-radius: 4pt;
+  box-shadow: -5px 5px 5pt rgb(167, 167, 167);
+  padding: 10px;
 }
 
 #app-body img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 #app-body button {
-    width: fit-content;
+  width: fit-content;
 }
 
 #app-body h2 {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .colorOne {
-    color: white;
-    background-color: #72195A;
+  color: white;
+  background-color: #72195a;
 }
 
 .colorTwo {
-    background-color: #386FA4;
+  background-color: #386fa4;
 }
 
 .colorThree {
-    background-color: #D0D6B5;
+  background-color: #d0d6b5;
 }
 
 .colorFour {
-    background-color: #F9B5AC;
+  background-color: #f9b5ac;
 }
 
 .colorFive {
-    background-color: #EE7674;
+  background-color: #ee7674;
 }
 
 .colorSix {
-    background-color: #177E89;
+  background-color: #177e89;
 }
 
 .colorSeven {
-    color: white;
-    background-color: #084C61;
+  color: white;
+  background-color: #084c61;
 }
 
 .colorEight {
-    background-color: #DB3A34;
+  background-color: #db3a34;
 }
 
 .colorNine {
-    background-color: #FFC857;
+  background-color: #ffc857;
 }
 
 .colorTen {
-    color: white;
-    background-color: #323031;
+  color: white;
+  background-color: #323031;
 }
