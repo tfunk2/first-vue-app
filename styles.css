@@ -42,15 +42,34 @@
 
 .colorThree {
     background-color: #D0D6B5;
-    
 }
 
 .colorFour {
     background-color: #F9B5AC;
-    
 }
 
 .colorFive {
     background-color: #EE7674;
-    
+}
+
+.colorSix {
+    background-color: #177E89;
+}
+
+.colorSeven {
+    color: white;
+    background-color: #084C61;
+}
+
+.colorEight {
+    background-color: #DB3A34;
+}
+
+.colorNine {
+    background-color: #FFC857;
+}
+
+.colorTen {
+    color: white;
+    background-color: #323031;
 }

@@ -12,6 +12,11 @@ const app = Vue.createApp({
       colorThree: false,
       colorFour: false,
       colorFive: false,
+      colorSix: false,
+      colorSeven: false,
+      colorEight: false,
+      colorNine: false,
+      colorTen: false,
       activeColor: "#FFFFFF"
     }
   },
@@ -23,6 +28,11 @@ const app = Vue.createApp({
         colorThree: this.colorThree, 
         colorFour: this.colorFour, 
         colorFive: this.colorFive, 
+        colorSix: this.colorSix, 
+        colorSeven: this.colorSeven, 
+        colorEight: this.colorEight, 
+        colorNine: this.colorNine,
+        colorTen: this.colorTen, 
       }
     }
   },
@@ -41,7 +51,18 @@ const app = Vue.createApp({
       this.displayedHobby = this.hobbies[randomIndex];
     },
     changeBackgroundColor() {
-      const colorPalette = ['#72195A', '#386FA4', '#D0D6B5', '#F9B5AC', '#EE7674']
+      const colorPalette = [
+        '#72195A', 
+        '#386FA4', 
+        '#D0D6B5', 
+        '#F9B5AC', 
+        '#EE7674',
+        '#177E89',
+        '#084C61',
+        '#DB3A34',
+        '#FFC857',
+        '#323031'
+      ]
       let randomIndex = Math.floor(Math.random() * colorPalette.length);
 
       if(colorPalette[randomIndex] === this.activeColor) {
@@ -57,6 +78,11 @@ const app = Vue.createApp({
       this.colorThree = false;
       this.colorFour = false;
       this.colorFive = false;
+      this.colorSix = false; 
+      this.colorSeven = false; 
+      this.colorEight = false; 
+      this.colorNine = false;
+      this.colorTen = false;
 
       switch(colorPalette[randomIndex]) {
         case '#72195A':
@@ -78,6 +104,26 @@ const app = Vue.createApp({
         case '#EE7674':
           this.colorFive = true;
           this.activeColor = '#EE7674';
+          break;
+        case '#177E89':
+          this.colorSix = true;
+          this.activeColor = '#177E89'
+          break;
+        case '#084C61':
+          this.colorSeven = true;
+          this.activeColor = '#084C61'
+          break;
+        case '#DB3A34':
+          this.colorEight = true;
+          this.activeColor = '#DB3A34'
+          break;
+        case '#FFC857':
+          this.colorNine = true;
+          this.activeColor = '#FFC857'
+          break;
+        case '#323031':
+          this.colorTen = true;
+          this.activeColor = '#323031'
           break;
         default:
           this.activeColor = '#FFFFFF'
